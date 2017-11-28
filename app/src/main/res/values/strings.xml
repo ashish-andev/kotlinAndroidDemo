@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">KotlinAndroidDemo</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_bundle_demo2">BundleDemo2Activity</string>
+
+
 </resources>
