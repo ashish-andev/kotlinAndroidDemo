@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
+import com.ashish.kotlinandroiddemo.fragment.FragDemoActivity
 import com.ashish.kotlinandroiddemo.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         listView.setOnItemClickListener { parent, view, position, id ->
             when (position) {
                 0 -> startActivity(Intent(this, LoginActivity::class.java))
+                1 -> startActivity(Intent(this, FragDemoActivity::class.java))
             }
             //Toast.makeText(this, parent.getItemAtPosition(position).toString(), Toast.LENGTH_SHORT).show()
         }

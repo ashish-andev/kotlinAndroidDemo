@@ -29,7 +29,10 @@
         <activity
             android:name=".login.LoginDetailActivity"
             android:label="@string/title_activity_bundle_demo2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".fragment.FragDemoActivity"
+            android:label="@string/title_activity_frag_demo"/>
     </application>
 
 </manifest>
