@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import com.ashish.kotlinandroiddemo.fragment.FragDemoActivity
+import com.ashish.kotlinandroiddemo.http.HttpDemoActivity
 import com.ashish.kotlinandroiddemo.login.LoginActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -24,13 +25,14 @@ class MainActivity : AppCompatActivity() {
             when (position) {
                 0 -> startActivity(Intent(this, LoginActivity::class.java))
                 1 -> startActivity(Intent(this, FragDemoActivity::class.java))
+                2 -> startActivity(Intent(this, HttpDemoActivity::class.java))
             }
             //Toast.makeText(this, parent.getItemAtPosition(position).toString(), Toast.LENGTH_SHORT).show()
         }
     }
 
     private class ListExampleAdapter(context: Context) : BaseAdapter() {
-        internal var sList = arrayOf("Login", "Fragment")
+        internal var sList = arrayOf("Login", "Fragment", "Http")
         private val mInflator: LayoutInflater
 
         init {
