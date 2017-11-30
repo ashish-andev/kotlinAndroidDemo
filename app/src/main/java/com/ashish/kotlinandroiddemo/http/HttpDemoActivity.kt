@@ -3,6 +3,7 @@ package com.ashish.kotlinandroiddemo.http
 import android.os.AsyncTask
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import com.ashish.kotlinandroiddemo.R
@@ -54,6 +55,7 @@ class HttpDemoActivity : AppCompatActivity() {
 
             recyclerView.adapter = CelebAdapter(this@HttpDemoActivity, result)
             recyclerView.layoutManager = LinearLayoutManager(this@HttpDemoActivity)
+//            recyclerView.layoutManager = GridLayoutManager(this@HttpDemoActivity, 2)
         }
 
         @Throws(IOException::class)
