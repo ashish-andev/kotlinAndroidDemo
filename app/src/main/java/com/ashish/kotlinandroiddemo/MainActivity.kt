@@ -13,6 +13,7 @@ import com.ashish.kotlinandroiddemo.broadcastrec.BroadcastDemoActivity
 import com.ashish.kotlinandroiddemo.fragment.FragDemoActivity
 import com.ashish.kotlinandroiddemo.http.HttpDemoActivity
 import com.ashish.kotlinandroiddemo.login.LoginActivity
+import com.ashish.kotlinandroiddemo.viewpager.ViewPagerActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -28,13 +29,14 @@ class MainActivity : AppCompatActivity() {
                 1 -> startActivity(Intent(this, FragDemoActivity::class.java))
                 2 -> startActivity(Intent(this, HttpDemoActivity::class.java))
                 3 -> startActivity(Intent(this, BroadcastDemoActivity::class.java))
+                4 -> startActivity(Intent(this, ViewPagerActivity::class.java))
             }
             //Toast.makeText(this, parent.getItemAtPosition(position).toString(), Toast.LENGTH_SHORT).show()
         }
     }
 
     private class ListExampleAdapter(context: Context) : BaseAdapter() {
-        internal var sList = arrayOf("Login", "Fragment", "Http", "Broadcast rec")
+        internal var sList = arrayOf("Login", "Fragment", "Http", "Broadcast rec", "View Pager")
         private val mInflator: LayoutInflater
 
         init {

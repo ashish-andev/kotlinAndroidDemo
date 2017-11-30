@@ -32,6 +32,9 @@
             android:label="@string/title_activity_frag_demo" />
         <activity android:name=".http.HttpDemoActivity" />
         <activity android:name=".broadcastrec.BroadcastDemoActivity" />
+        <activity
+            android:name=".viewpager.ViewPagerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <receiver android:name=".broadcastrec.ChargingRec">
             <intent-filter>
